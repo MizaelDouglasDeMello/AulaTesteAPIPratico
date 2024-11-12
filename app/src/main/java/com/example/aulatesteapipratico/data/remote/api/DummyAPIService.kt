@@ -7,6 +7,6 @@ import retrofit2.http.GET
 interface DummyAPIService {
 
     @GET("users")
-    suspend fun recupearListaUsuarios() : Response<ResultadoDummyAPI>
+    suspend fun recuperarListaUsuarios() : Response<ResultadoDummyAPI>
 
 }

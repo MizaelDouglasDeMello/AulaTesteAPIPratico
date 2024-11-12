@@ -7,7 +7,7 @@ class UsuarioUseCase(
     private val iUsuarioRepository: IUsuarioRepository
 ) {
 
-    suspend operator fun invoke() : List<Usuario> {//getListUserUseCase
+    suspend operator fun invoke() : List<Usuario> { // getListUserUseCase
         val listaUsuarios = iUsuarioRepository.listar()
         return listaUsuarios.filter { it.age >= 40 }
     }
